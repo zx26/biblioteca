@@ -16,7 +16,7 @@ public class MainActivity extends Activity
 	List<String> expandableTitleList;
 	HashMap<String,List<String>> expandableDetailList;
 	WebActivity web;
-	private StartAppAd ad;
+	
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
