@@ -43,6 +43,7 @@
         <activity android:name="com.chucho.biblioastro.WebActivity" />
         <activity
             android:name="com.chucho.biblioastro.MainActivity"
+            android:exported="true"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
