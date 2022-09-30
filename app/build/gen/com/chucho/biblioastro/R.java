@@ -18,11 +18,14 @@ public final class R {
         public static final int image_2=0x7f020004;
     }
     public static final class id {
-        public static final int ex=0x7f060003;
-        public static final int expandedListItem=0x7f060001;
-        public static final int listTitle=0x7f060000;
-        public static final int startAppBanner=0x7f060002;
-        public static final int web=0x7f060004;
+        public static final int ex=0x7f070003;
+        public static final int expandedListItem=0x7f070001;
+        public static final int listTitle=0x7f070000;
+        public static final int startAppBanner=0x7f070002;
+        public static final int web=0x7f070004;
+    }
+    public static final class integer {
+        public static final int com_startapp_sdk_aar=0x7f040000;
     }
     public static final class layout {
         public static final int dimens=0x7f030000;
@@ -32,10 +35,10 @@ public final class R {
         public static final int web_activity=0x7f030004;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
-        public static final int hello_world=0x7f040001;
+        public static final int app_name=0x7f050000;
+        public static final int hello_world=0x7f050001;
     }
     public static final class style {
-        public static final int AppTheme=0x7f050000;
+        public static final int AppTheme=0x7f060000;
     }
 }
