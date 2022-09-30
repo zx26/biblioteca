@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 32
     buildToolsVersion "30.0.2"
 	
 	sourceSets {
@@ -25,7 +25,7 @@ android {
     defaultConfig {
         applicationId "com.chucho.biblioastro"
         minSdkVersion 21
-        targetSdkVersion 33
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
     }
@@ -39,10 +39,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-	
+	def appCenterSdkVersion = '4.3.1'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+}
 	
         
-}
+
         
 	
 	
