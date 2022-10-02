@@ -24,7 +24,8 @@
 		android:dividerHeight="0.5dp"
 		android:layout_below="@+id/startAppBanner"
 		android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
-		android:paddingTop="3dp"/>
+		android:paddingTop="3dp"
+		android:id="@+id/ex"/>
 
 </RelativeLayout>
 
