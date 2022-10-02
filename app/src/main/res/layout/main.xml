@@ -12,7 +12,11 @@
 	android:id="@+id/layout"
 	android:background="@drawable/image_2">
 
- 
+    <com.startapp.sdk.ads.banner.Banner
+		android:id="@+id/startAppBanner"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/>
 
 	<ExpandableListView
 		android:layout_width="match_parent"
@@ -20,6 +24,7 @@
 		android:divider="@android:color/darker_gray"
 		android:dividerHeight="0.5dp"
 		android:id="@+id/ex"
+		android:layout_below="@+id/startAppBanner"
 		android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
 		android:paddingTop="30dp"/>
 
