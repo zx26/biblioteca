@@ -31,6 +31,19 @@ public class MainActivity extends Activity
 		StartAppAd.disableSplash();
 		StartAppAd.setAutoInterstitialPreferences(
 		                   new AutoInterstitialPreferences().setActivitiesBetweenAds(3));
+						   
+		// Get the Main relative layout of the entire activity
+		RelativeLayout mainLayout = (RelativeLayout)findViewById(R.id.mainLayout);   
+// Define StartApp Banner
+		Banner startAppBanner = new Banner(context);
+		RelativeLayout.LayoutParams bannerParameters =
+			new RelativeLayout.LayoutParams(
+			RelativeLayout.LayoutParams.WRAP_CONTENT,
+			RelativeLayout.LayoutParams.WRAP_CONTENT);
+		bannerParameters.addRule(RelativeLayout.ALIGN_TOP);
+		bannerParameters.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);    
+// Add to main Layout
+		mainLayout.addView(startAppBanner, bannerParameters);				   
 		StartAppAd.showAd(this);
 		
 		//ad = new StartAppAd(this);

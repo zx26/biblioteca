@@ -9,13 +9,10 @@
 	android:paddingRight="16dp"
 	android:paddingBottom="16dp"
 	tools:context=".MainActivity"
+	android:id="@+id/layout"
 	android:background="@drawable/image_2">
 
-    <com.startapp.sdk.ads.banner.Banner
-		android:id="@+id/startAppBanner"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:paddingTop="0.5dp"/>
+ 
 
 	<ExpandableListView
 		android:layout_width="match_parent"
