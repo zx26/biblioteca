@@ -35,11 +35,7 @@ public class MainActivity extends Activity
 						   
 		StartAppAd.showAd(this);
 		
-		//ad = new StartAppAd(this);
 		
-		//ad.setAutoInterstitialPreferences(new AutoInterstitialPreferences().setActivitiesBetweenAds(3));
-		//ad.showAd();
-        //ad.loadAd();
 		ex = (ExpandableListView)findViewById(R.id.ex);
 		expandableDetailList=ItemDataList.getData();
 		expandableTitleList=new ArrayList<String>(expandableDetailList.keySet());
