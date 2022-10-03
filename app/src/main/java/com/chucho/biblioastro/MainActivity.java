@@ -23,8 +23,6 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
 		
-		//StartAppSDK.init(this,"208698859",true);
-		//StartAppSDK.setTestAdsEnabled(BuildConfig.DEBUG);
 		
         setContentView(R.layout.main);
 		
