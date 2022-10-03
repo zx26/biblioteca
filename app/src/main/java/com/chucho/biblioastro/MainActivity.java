@@ -28,7 +28,8 @@ public class MainActivity extends Activity
 		
 		StartAppAd.disableSplash();
 		StartAppAd.setAutoInterstitialPreferences(
-		                   new AutoInterstitialPreferences().setActivitiesBetweenAds(3));
+		                   new AutoInterstitialPreferences().setActivitiesBetweenAds(4));
+		
 						   
 						   
 		StartAppAd.showAd(this);
