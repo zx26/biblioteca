@@ -414,7 +414,7 @@ public class MainActivity extends Activity
 		Intent intent= new Intent(getBaseContext(),WebActivity.class);
 		intent.putExtra("direccion",direccion);
 		startActivity(intent);
-		//StartAppAd.showAd(this);
+		
 	}
 	
 	public String getDireccion(String direccion){
