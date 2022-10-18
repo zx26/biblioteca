@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.startapp.startappsdk;
+package com.google.android.gms.common;
 
 public final class R {
     public static final class attr {
