@@ -8,6 +8,7 @@ import android.view.*;
 import android.content.*;
 import com.startapp.sdk.adsbase.*;
 import com.startapp.sdk.ads.banner.*;
+import com.tappx.sdk.android.*;
 
 public class MainActivity extends Activity 
 {
@@ -34,7 +35,7 @@ public class MainActivity extends Activity
 						   
 		StartAppAd.showAd(this);
 		
-		
+		Tappx.setCollectLocationEnabled(getBaseContext(),true);
 		ex = (ExpandableListView)findViewById(R.id.ex);
 		expandableDetailList=ItemDataList.getData();
 		expandableTitleList=new ArrayList<String>(expandableDetailList.keySet());

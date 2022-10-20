@@ -9,6 +9,7 @@
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	<uses-permission android:name="android.permission.BLUETOOTH" />
 	<uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 		<queries>
 			<intent>
 				<action android:name="android.intent.action.MAIN" />
@@ -51,7 +52,18 @@
 			
 			</receiver>
 	    
-		
+		<!-- AdActivity from Google Play Services, needed by Tappx -->
+		<activity
+			android:name="com.google.android.gms.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+			android:theme="@android:style/Theme.Translucent" />
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+		<receiver
+            android:name="com.tappx.sdk.android.TrackInstallReceiver"
+            android:exported="true">
+        </receiver>
     </application>
 	
 	

@@ -34,6 +34,7 @@ dependencies {
 	implementation 'com.startapp:inapp-sdk:4.10.+'
     def appCenterSdkVersion = '4.1.0'
 	implementation 'com.tappx.sdk.android:tappx-sdk:4.+'
+	implementation 'com.google.android.gms:play-services-ads:21.1.0'
     implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
     implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
 

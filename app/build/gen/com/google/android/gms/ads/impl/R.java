@@ -41,13 +41,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int alpha=0x7f010003;
+        public static final int alpha=0x7f01000c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int coordinatorLayoutStyle=0x7f010003;
         /**  The reference to the font file to be used. This should be a file in the res/font folder
          and should therefore have an R reference value. E.g. @font/myfont 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int font=0x7f01000b;
+        public static final int font=0x7f010014;
         /**  The authority of the Font Provider to be used for the request. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -56,7 +60,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fontProviderAuthority=0x7f010004;
+        public static final int fontProviderAuthority=0x7f01000d;
         /**  The sets of hashes for the certificates the provider should be signed with. This is
         used to verify the identity of the provider, and is only required if the provider is not
         part of the system image. This value may point to one list or a list of lists, where each
@@ -65,7 +69,7 @@ containing a value of this type.
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int fontProviderCerts=0x7f010007;
+        public static final int fontProviderCerts=0x7f010010;
         /**  The strategy to be used when fetching font data from a font provider in XML layouts.
         This attribute is ignored when the resource is loaded from code, as it is equivalent to the
         choice of API between {@link
@@ -91,7 +95,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
               fontProviderFetchTimeout will be ignored if async loading is specified. </td></tr>
 </table>
          */
-        public static final int fontProviderFetchStrategy=0x7f010008;
+        public static final int fontProviderFetchStrategy=0x7f010011;
         /**  The length of the timeout during fetching. 
          <p>May be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -109,7 +113,7 @@ containing a value of this type.
               timeout and wait until a reply is received from the font provider. </td></tr>
 </table>
          */
-        public static final int fontProviderFetchTimeout=0x7f010009;
+        public static final int fontProviderFetchTimeout=0x7f010012;
         /**  The package for the Font Provider to be used for the request. This is used to verify
         the identity of the provider. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -119,7 +123,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fontProviderPackage=0x7f010005;
+        public static final int fontProviderPackage=0x7f01000e;
         /**  The query to be sent over to the provider. Refer to your font provider's documentation
         on the format of this string. 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -129,7 +133,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fontProviderQuery=0x7f010006;
+        public static final int fontProviderQuery=0x7f01000f;
         /**  The style of the given font file. This will be used when the font is being loaded into
          the font stack and will override any style information in the font's header tables. If
          unspecified, the value in the font's header tables will be used. 
@@ -143,7 +147,7 @@ containing a value of this type.
 <tr><td><code>italic</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int fontStyle=0x7f01000a;
+        public static final int fontStyle=0x7f010013;
         /**  The variation settings to be applied to the font. The string should be in the following
          format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
          used, or the font used does not support variation settings, this attribute needs not be
@@ -155,7 +159,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fontVariationSettings=0x7f01000d;
+        public static final int fontVariationSettings=0x7f010016;
         /**  The weight of the given font file. This will be used when the font is being loaded into
          the font stack and will override any weight information in the font's header tables. Must
          be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
@@ -168,7 +172,116 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fontWeight=0x7f01000c;
+        public static final int fontWeight=0x7f010015;
+        /**  A reference to an array of integers representing the
+             locations of horizontal keylines in dp from the starting edge.
+             Child views can refer to these keylines for alignment using
+             layout_keyline="index" where index is a 0-based index into
+             this array. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int keylines=0x7f010004;
+        /**  The id of an anchor view that this view should position relative to. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int layout_anchor=0x7f010007;
+        /**  Specifies how an object should position relative to an anchor, on both the X and Y axes,
+             within its parent's bounds.  
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Push object to the left of its container, not changing its size. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Push object to the right of its container, not changing its size. </td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td> Place object in the vertical center of its container, not changing its size. </td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td> Grow the vertical size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td> Place object in the horizontal center of its container, not changing its size. </td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td> Grow the horizontal size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td> Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. </td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td> Grow the horizontal and vertical size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td> Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. </td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td> Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Push object to the beginning of its container, not changing its size. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Push object to the end of its container, not changing its size. </td></tr>
+</table>
+         */
+        public static final int layout_anchorGravity=0x7f010009;
+        /**  The class name of a Behavior class defining special runtime behavior
+             for this child view. 
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_behavior=0x7f010006;
+        /**  Specifies how this view dodges the inset edges of the CoordinatorLayout. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td> Don't dodge any edges </td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Dodge the top inset edge. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Dodge the bottom inset edge. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Dodge the left inset edge. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Dodge the right inset edge. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Dodge the start inset edge. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Dodge the end inset edge. </td></tr>
+<tr><td><code>all</code></td><td>0x77</td><td> Dodge all the inset edges. </td></tr>
+</table>
+         */
+        public static final int layout_dodgeInsetEdges=0x7f01000b;
+        /**  Specifies how this view insets the CoordinatorLayout and make some other views
+             dodge it. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td> Don't inset. </td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Inset the top edge. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Inset the bottom edge. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Inset the left edge. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Inset the right edge. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Inset the start edge. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Inset the end edge. </td></tr>
+</table>
+         */
+        public static final int layout_insetEdge=0x7f01000a;
+        /**  The index of a keyline this view should position relative to.
+             android:layout_gravity will affect how the view aligns to the
+             specified keyline. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_keyline=0x7f010008;
+        /**  Drawable to display behind the status bar when the view is set to draw behind it. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int statusBarBackground=0x7f010005;
         /**  The index of the font in the tcc font file. If the font file referenced is not in the
         tcc format, this attribute needs not be specified. 
          <p>Must be an integer value, such as "<code>100</code>".
@@ -178,7 +291,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int ttcIndex=0x7f01000e;
+        public static final int ttcIndex=0x7f010017;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -186,7 +299,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int txAdSize=0x7f01000f;
+        public static final int txAdSize=0x7f010018;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -194,7 +307,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int txAppKey=0x7f010010;
+        public static final int txAppKey=0x7f010019;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -202,7 +315,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int txAutoPrivacyDisclaimer=0x7f010011;
+        public static final int txAutoPrivacyDisclaimer=0x7f01001a;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -210,7 +323,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int txRefreshTime=0x7f010012;
+        public static final int txRefreshTime=0x7f01001b;
     }
     public static final class color {
         public static final int browser_actions_bg_grey=0x7f080004;
@@ -270,51 +383,67 @@ containing a value of this type.
         public static final int tappx_privacy_button_background=0x7f020010;
     }
     public static final class id {
-        public static final int action_container=0x7f090017;
-        public static final int action_divider=0x7f090023;
-        public static final int action_image=0x7f090018;
-        public static final int action_text=0x7f090019;
-        public static final int actions=0x7f090024;
-        public static final int async=0x7f090008;
-        public static final int blocking=0x7f090009;
-        public static final int browser_actions_header_text=0x7f09000e;
-        public static final int browser_actions_menu_item_icon=0x7f090010;
-        public static final int browser_actions_menu_item_text=0x7f090011;
-        public static final int browser_actions_menu_items=0x7f09000f;
-        public static final int browser_actions_menu_view=0x7f09000d;
-        public static final int chronometer=0x7f090022;
-        public static final int ex=0x7f090016;
-        public static final int expandedListItem=0x7f090013;
-        public static final int forever=0x7f09000a;
-        public static final int icon=0x7f09001b;
-        public static final int icon_group=0x7f090025;
-        public static final int info=0x7f09001e;
-        public static final int italic=0x7f09000b;
-        public static final int layout=0x7f090014;
+        public static final int action_container=0x7f090027;
+        public static final int action_divider=0x7f090033;
+        public static final int action_image=0x7f090028;
+        public static final int action_text=0x7f090029;
+        public static final int actions=0x7f090034;
+        public static final int all=0x7f090017;
+        public static final int async=0x7f090018;
+        public static final int blocking=0x7f090019;
+        public static final int bottom=0x7f090008;
+        public static final int browser_actions_header_text=0x7f09001e;
+        public static final int browser_actions_menu_item_icon=0x7f090020;
+        public static final int browser_actions_menu_item_text=0x7f090021;
+        public static final int browser_actions_menu_items=0x7f09001f;
+        public static final int browser_actions_menu_view=0x7f09001d;
+        public static final int center=0x7f090009;
+        public static final int center_horizontal=0x7f09000a;
+        public static final int center_vertical=0x7f09000b;
+        public static final int chronometer=0x7f090032;
+        public static final int clip_horizontal=0x7f09000c;
+        public static final int clip_vertical=0x7f09000d;
+        public static final int end=0x7f09000e;
+        public static final int ex=0x7f090026;
+        public static final int expandedListItem=0x7f090023;
+        public static final int fill=0x7f09000f;
+        public static final int fill_horizontal=0x7f090010;
+        public static final int fill_vertical=0x7f090011;
+        public static final int forever=0x7f09001a;
+        public static final int icon=0x7f09002b;
+        public static final int icon_group=0x7f090035;
+        public static final int info=0x7f09002e;
+        public static final int italic=0x7f09001b;
+        public static final int layout=0x7f090024;
+        public static final int left=0x7f090012;
         public static final int line1=0x7f090000;
         public static final int line3=0x7f090001;
-        public static final int listTitle=0x7f090012;
-        public static final int normal=0x7f09000c;
-        public static final int notification_background=0x7f090020;
-        public static final int notification_main_column=0x7f09001c;
-        public static final int notification_main_column_container=0x7f09001a;
-        public static final int right_icon=0x7f09001f;
-        public static final int right_side=0x7f09001d;
-        public static final int startAppBanner=0x7f090015;
+        public static final int listTitle=0x7f090022;
+        public static final int none=0x7f090016;
+        public static final int normal=0x7f09001c;
+        public static final int notification_background=0x7f090030;
+        public static final int notification_main_column=0x7f09002c;
+        public static final int notification_main_column_container=0x7f09002a;
+        public static final int right=0x7f090013;
+        public static final int right_icon=0x7f09002f;
+        public static final int right_side=0x7f09002d;
+        public static final int start=0x7f090014;
+        public static final int startAppBanner=0x7f090025;
         public static final int tag_transition_group=0x7f090002;
         public static final int tag_unhandled_key_event_manager=0x7f090003;
         public static final int tag_unhandled_key_listeners=0x7f090004;
-        public static final int tappx_privacy_button_no=0x7f090029;
-        public static final int tappx_privacy_button_yes=0x7f090028;
-        public static final int tappx_privacy_container_content=0x7f090026;
-        public static final int tappx_privacy_container_expand_image=0x7f09002b;
-        public static final int tappx_privacy_container_expand_switch=0x7f09002a;
-        public static final int tappx_privacy_text_message=0x7f090027;
+        public static final int tappx_privacy_button_no=0x7f090039;
+        public static final int tappx_privacy_button_yes=0x7f090038;
+        public static final int tappx_privacy_container_content=0x7f090036;
+        public static final int tappx_privacy_container_expand_image=0x7f09003b;
+        public static final int tappx_privacy_container_expand_switch=0x7f09003a;
+        public static final int tappx_privacy_text_message=0x7f090037;
         public static final int text=0x7f090005;
         public static final int text2=0x7f090006;
-        public static final int time=0x7f090021;
+        public static final int time=0x7f090031;
         public static final int title=0x7f090007;
-        public static final int web=0x7f09002c;
+        public static final int top=0x7f090015;
+        public static final int web=0x7f09003c;
     }
     public static final class integer {
         public static final int com_startapp_sdk_aar=0x7f050002;
@@ -351,16 +480,17 @@ containing a value of this type.
         public static final int status_bar_notification_info_overflow=0x7f060001;
     }
     public static final class style {
-        public static final int AppTheme=0x7f040009;
-        public static final int TextAppearance_Compat_Notification=0x7f040001;
-        public static final int TextAppearance_Compat_Notification_Info=0x7f040002;
-        public static final int TextAppearance_Compat_Notification_Line2=0x7f040007;
-        public static final int TextAppearance_Compat_Notification_Time=0x7f040003;
-        public static final int TextAppearance_Compat_Notification_Title=0x7f040004;
+        public static final int AppTheme=0x7f04000a;
+        public static final int TextAppearance_Compat_Notification=0x7f040002;
+        public static final int TextAppearance_Compat_Notification_Info=0x7f040003;
+        public static final int TextAppearance_Compat_Notification_Line2=0x7f040008;
+        public static final int TextAppearance_Compat_Notification_Time=0x7f040004;
+        public static final int TextAppearance_Compat_Notification_Title=0x7f040005;
         public static final int Theme_IAPTheme=0x7f040000;
-        public static final int Transparent=0x7f040008;
-        public static final int Widget_Compat_NotificationActionContainer=0x7f040005;
-        public static final int Widget_Compat_NotificationActionText=0x7f040006;
+        public static final int Transparent=0x7f040009;
+        public static final int Widget_Compat_NotificationActionContainer=0x7f040006;
+        public static final int Widget_Compat_NotificationActionText=0x7f040007;
+        public static final int Widget_Support_CoordinatorLayout=0x7f040001;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -437,7 +567,7 @@ containing a value of this type.
            @see #ColorStateListItem_android_color
          */
         public static final int[] ColorStateListItem = {
-            0x010101a5, 0x0101031f, 0x7f010003
+            0x010101a5, 0x0101031f, 0x7f01000c
         };
         /**
           <p>
@@ -470,6 +600,222 @@ containing a value of this type.
           @attr name android:color
         */
         public static final int ColorStateListItem_android_color = 0;
+        /** Attributes that can be used with a CoordinatorLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.chucho.biblioastro:keylines}</code></td><td> A reference to an array of integers representing the
+             locations of horizontal keylines in dp from the starting edge.</td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.chucho.biblioastro:statusBarBackground}</code></td><td> Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
+           </table>
+           @see #CoordinatorLayout_keylines
+           @see #CoordinatorLayout_statusBarBackground
+         */
+        public static final int[] CoordinatorLayout = {
+            0x7f010004, 0x7f010005
+        };
+        /**
+          <p>
+          @attr description
+           A reference to an array of integers representing the
+             locations of horizontal keylines in dp from the starting edge.
+             Child views can refer to these keylines for alignment using
+             layout_keyline="index" where index is a 0-based index into
+             this array. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:keylines
+        */
+        public static final int CoordinatorLayout_keylines = 0;
+        /**
+          <p>
+          @attr description
+           Drawable to display behind the status bar when the view is set to draw behind it. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:statusBarBackground
+        */
+        public static final int CoordinatorLayout_statusBarBackground = 1;
+        /** Attributes that can be used with a CoordinatorLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.chucho.biblioastro:layout_anchor}</code></td><td> The id of an anchor view that this view should position relative to.</td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.chucho.biblioastro:layout_anchorGravity}</code></td><td> Specifies how an object should position relative to an anchor, on both the X and Y axes,
+             within its parent's bounds.</td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.chucho.biblioastro:layout_behavior}</code></td><td> The class name of a Behavior class defining special runtime behavior
+             for this child view.</td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.chucho.biblioastro:layout_dodgeInsetEdges}</code></td><td> Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.chucho.biblioastro:layout_insetEdge}</code></td><td> Specifies how this view insets the CoordinatorLayout and make some other views
+             dodge it.</td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.chucho.biblioastro:layout_keyline}</code></td><td> The index of a keyline this view should position relative to.</td></tr>
+           </table>
+           @see #CoordinatorLayout_Layout_android_layout_gravity
+           @see #CoordinatorLayout_Layout_layout_anchor
+           @see #CoordinatorLayout_Layout_layout_anchorGravity
+           @see #CoordinatorLayout_Layout_layout_behavior
+           @see #CoordinatorLayout_Layout_layout_dodgeInsetEdges
+           @see #CoordinatorLayout_Layout_layout_insetEdge
+           @see #CoordinatorLayout_Layout_layout_keyline
+         */
+        public static final int[] CoordinatorLayout_Layout = {
+            0x010100b3, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#layout_gravity}
+          attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+          @attr name android:layout_gravity
+        */
+        public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
+        /**
+          <p>
+          @attr description
+           The id of an anchor view that this view should position relative to. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:layout_anchor
+        */
+        public static final int CoordinatorLayout_Layout_layout_anchor = 2;
+        /**
+          <p>
+          @attr description
+           Specifies how an object should position relative to an anchor, on both the X and Y axes,
+             within its parent's bounds.  
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Push object to the top of its container, not changing its size. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Push object to the bottom of its container, not changing its size. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Push object to the left of its container, not changing its size. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Push object to the right of its container, not changing its size. </td></tr>
+<tr><td><code>center_vertical</code></td><td>0x10</td><td> Place object in the vertical center of its container, not changing its size. </td></tr>
+<tr><td><code>fill_vertical</code></td><td>0x70</td><td> Grow the vertical size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>center_horizontal</code></td><td>0x01</td><td> Place object in the horizontal center of its container, not changing its size. </td></tr>
+<tr><td><code>fill_horizontal</code></td><td>0x07</td><td> Grow the horizontal size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>center</code></td><td>0x11</td><td> Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. </td></tr>
+<tr><td><code>fill</code></td><td>0x77</td><td> Grow the horizontal and vertical size of the object if needed so it completely fills its container. </td></tr>
+<tr><td><code>clip_vertical</code></td><td>0x80</td><td> Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. </td></tr>
+<tr><td><code>clip_horizontal</code></td><td>0x08</td><td> Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Push object to the beginning of its container, not changing its size. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Push object to the end of its container, not changing its size. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:layout_anchorGravity
+        */
+        public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
+        /**
+          <p>
+          @attr description
+           The class name of a Behavior class defining special runtime behavior
+             for this child view. 
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:layout_behavior
+        */
+        public static final int CoordinatorLayout_Layout_layout_behavior = 1;
+        /**
+          <p>
+          @attr description
+           Specifies how this view dodges the inset edges of the CoordinatorLayout. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td> Don't dodge any edges </td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Dodge the top inset edge. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Dodge the bottom inset edge. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Dodge the left inset edge. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Dodge the right inset edge. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Dodge the start inset edge. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Dodge the end inset edge. </td></tr>
+<tr><td><code>all</code></td><td>0x77</td><td> Dodge all the inset edges. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:layout_dodgeInsetEdges
+        */
+        public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
+        /**
+          <p>
+          @attr description
+           Specifies how this view insets the CoordinatorLayout and make some other views
+             dodge it. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0x0</td><td> Don't inset. </td></tr>
+<tr><td><code>top</code></td><td>0x30</td><td> Inset the top edge. </td></tr>
+<tr><td><code>bottom</code></td><td>0x50</td><td> Inset the bottom edge. </td></tr>
+<tr><td><code>left</code></td><td>0x03</td><td> Inset the left edge. </td></tr>
+<tr><td><code>right</code></td><td>0x05</td><td> Inset the right edge. </td></tr>
+<tr><td><code>start</code></td><td>0x00800003</td><td> Inset the start edge. </td></tr>
+<tr><td><code>end</code></td><td>0x00800005</td><td> Inset the end edge. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:layout_insetEdge
+        */
+        public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
+        /**
+          <p>
+          @attr description
+           The index of a keyline this view should position relative to.
+             android:layout_gravity will affect how the view aligns to the
+             specified keyline. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.chucho.biblioastro:layout_keyline
+        */
+        public static final int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a FontFamily.
            <p>Includes the following attributes:</p>
            <table>
@@ -491,8 +837,8 @@ containing a value of this type.
            @see #FontFamily_fontProviderQuery
          */
         public static final int[] FontFamily = {
-            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
-            0x7f010008, 0x7f010009
+            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
+            0x7f010011, 0x7f010012
         };
         /**
           <p>
@@ -648,8 +994,8 @@ containing a value of this type.
          */
         public static final int[] FontFamilyFont = {
             0x01010532, 0x01010533, 0x0101053f, 0x0101056f,
-            0x01010570, 0x7f01000a, 0x7f01000b, 0x7f01000c,
-            0x7f01000d, 0x7f01000e
+            0x01010570, 0x7f010013, 0x7f010014, 0x7f010015,
+            0x7f010016, 0x7f010017
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -980,7 +1326,7 @@ containing a value of this type.
            @see #TappxParams_txRefreshTime
          */
         public static final int[] TappxParams = {
-            0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b
         };
         /**
           <p>This symbol is the offset where the {@link com.chucho.biblioastro.R.attr#txAdSize}
