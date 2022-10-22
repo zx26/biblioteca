@@ -17,7 +17,7 @@ public class MainActivity extends Activity
 	List<String> expandableTitleList;
 	HashMap<String,List<String>> expandableDetailList;
 	WebActivity web;
-	
+	TappxBanner banner;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -36,6 +36,7 @@ public class MainActivity extends Activity
 		StartAppAd.showAd(this);
 		
 		Tappx.setCollectLocationEnabled(getBaseContext(),true);
+		banner = (TappxBanner)findViewById(R.id.tappx_banner);
 		ex = (ExpandableListView)findViewById(R.id.ex);
 		expandableDetailList=ItemDataList.getData();
 		expandableTitleList=new ArrayList<String>(expandableDetailList.keySet());
@@ -421,4 +422,13 @@ public class MainActivity extends Activity
 	public String getDireccion(String direccion){
 		return web.direccion;
 	}
+
+	@Override
+	protected void onDestroy()
+	{
+		// TODO: Implement this method
+		super.onDestroy();
+		banner.destroy();
+	}
+
 }

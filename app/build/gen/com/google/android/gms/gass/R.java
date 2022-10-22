@@ -428,10 +428,10 @@ containing a value of this type.
         public static final int right_icon=0x7f09002f;
         public static final int right_side=0x7f09002d;
         public static final int start=0x7f090014;
-        public static final int startAppBanner=0x7f090025;
         public static final int tag_transition_group=0x7f090002;
         public static final int tag_unhandled_key_event_manager=0x7f090003;
         public static final int tag_unhandled_key_listeners=0x7f090004;
+        public static final int tappx_banner=0x7f090025;
         public static final int tappx_privacy_button_no=0x7f090039;
         public static final int tappx_privacy_button_yes=0x7f090038;
         public static final int tappx_privacy_container_content=0x7f090036;

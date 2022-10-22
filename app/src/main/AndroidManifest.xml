@@ -52,7 +52,7 @@
 			
 			</receiver>
 	    
-		<!-- AdActivity from Google Play Services, needed by Tappx -->
+		
 		<activity
 			android:name="com.google.android.gms.ads.AdActivity"
 			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
