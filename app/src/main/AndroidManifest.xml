@@ -52,8 +52,8 @@
 			
 			</receiver>
 	    
-		
-		<activity
+		<!-- AdActivity from Google Play Services, needed by Tappx -->
+		<!--<activity
 			android:name="com.google.android.gms.ads.AdActivity"
 			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
 			android:theme="@android:style/Theme.Translucent" />
@@ -63,7 +63,7 @@
 		<receiver
             android:name="com.tappx.sdk.android.TrackInstallReceiver"
             android:exported="true">
-        </receiver>
+        </receiver>-->
     </application>
 	
 	

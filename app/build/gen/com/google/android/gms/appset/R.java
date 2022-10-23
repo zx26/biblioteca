@@ -353,85 +353,53 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int ttcIndex=0x7f01001d;
-        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int txAdSize=0x7f01001e;
-        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int txAppKey=0x7f01001f;
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int txAutoPrivacyDisclaimer=0x7f010020;
-        /** <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int txRefreshTime=0x7f010021;
     }
     public static final class color {
-        public static final int browser_actions_bg_grey=0x7f04000c;
-        public static final int browser_actions_divider_color=0x7f04000d;
-        public static final int browser_actions_text_color=0x7f04000e;
-        public static final int browser_actions_title_color=0x7f04000f;
-        public static final int common_google_signin_btn_text_dark=0x7f040010;
-        public static final int common_google_signin_btn_text_dark_default=0x7f040000;
-        public static final int common_google_signin_btn_text_dark_disabled=0x7f040001;
-        public static final int common_google_signin_btn_text_dark_focused=0x7f040002;
-        public static final int common_google_signin_btn_text_dark_pressed=0x7f040003;
-        public static final int common_google_signin_btn_text_light=0x7f040011;
-        public static final int common_google_signin_btn_text_light_default=0x7f040004;
-        public static final int common_google_signin_btn_text_light_disabled=0x7f040005;
-        public static final int common_google_signin_btn_text_light_focused=0x7f040006;
-        public static final int common_google_signin_btn_text_light_pressed=0x7f040007;
-        public static final int common_google_signin_btn_tint=0x7f040012;
-        public static final int notification_action_color_filter=0x7f040008;
-        public static final int notification_icon_bg_color=0x7f040009;
-        public static final int ripple_material_light=0x7f04000a;
-        public static final int secondary_text_default_material_light=0x7f04000b;
+        public static final int browser_actions_bg_grey=0x7f05000c;
+        public static final int browser_actions_divider_color=0x7f05000d;
+        public static final int browser_actions_text_color=0x7f05000e;
+        public static final int browser_actions_title_color=0x7f05000f;
+        public static final int common_google_signin_btn_text_dark=0x7f050010;
+        public static final int common_google_signin_btn_text_dark_default=0x7f050000;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f050001;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f050002;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f050003;
+        public static final int common_google_signin_btn_text_light=0x7f050011;
+        public static final int common_google_signin_btn_text_light_default=0x7f050004;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f050005;
+        public static final int common_google_signin_btn_text_light_focused=0x7f050006;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f050007;
+        public static final int common_google_signin_btn_tint=0x7f050012;
+        public static final int notification_action_color_filter=0x7f050008;
+        public static final int notification_icon_bg_color=0x7f050009;
+        public static final int ripple_material_light=0x7f05000a;
+        public static final int secondary_text_default_material_light=0x7f05000b;
     }
     public static final class dimen {
-        public static final int browser_actions_context_menu_max_width=0x7f080016;
-        public static final int browser_actions_context_menu_min_padding=0x7f080017;
-        public static final int compat_button_inset_horizontal_material=0x7f080004;
-        public static final int compat_button_inset_vertical_material=0x7f080005;
-        public static final int compat_button_padding_horizontal_material=0x7f080006;
-        public static final int compat_button_padding_vertical_material=0x7f080007;
-        public static final int compat_control_corner_material=0x7f080008;
-        public static final int compat_notification_large_icon_max_height=0x7f080009;
-        public static final int compat_notification_large_icon_max_width=0x7f08000a;
-        public static final int notification_action_icon_size=0x7f08000b;
-        public static final int notification_action_text_size=0x7f08000c;
-        public static final int notification_big_circle_margin=0x7f08000d;
-        public static final int notification_content_margin_start=0x7f080001;
-        public static final int notification_large_icon_height=0x7f08000e;
-        public static final int notification_large_icon_width=0x7f08000f;
-        public static final int notification_main_column_padding_top=0x7f080002;
-        public static final int notification_media_narrow_margin=0x7f080003;
-        public static final int notification_right_icon_size=0x7f080010;
-        public static final int notification_right_side_padding_top=0x7f080000;
-        public static final int notification_small_icon_background_padding=0x7f080011;
-        public static final int notification_small_icon_size_as_large=0x7f080012;
-        public static final int notification_subtext_size=0x7f080013;
-        public static final int notification_top_pad=0x7f080014;
-        public static final int notification_top_pad_large_text=0x7f080015;
+        public static final int browser_actions_context_menu_max_width=0x7f090016;
+        public static final int browser_actions_context_menu_min_padding=0x7f090017;
+        public static final int compat_button_inset_horizontal_material=0x7f090004;
+        public static final int compat_button_inset_vertical_material=0x7f090005;
+        public static final int compat_button_padding_horizontal_material=0x7f090006;
+        public static final int compat_button_padding_vertical_material=0x7f090007;
+        public static final int compat_control_corner_material=0x7f090008;
+        public static final int compat_notification_large_icon_max_height=0x7f090009;
+        public static final int compat_notification_large_icon_max_width=0x7f09000a;
+        public static final int notification_action_icon_size=0x7f09000b;
+        public static final int notification_action_text_size=0x7f09000c;
+        public static final int notification_big_circle_margin=0x7f09000d;
+        public static final int notification_content_margin_start=0x7f090001;
+        public static final int notification_large_icon_height=0x7f09000e;
+        public static final int notification_large_icon_width=0x7f09000f;
+        public static final int notification_main_column_padding_top=0x7f090002;
+        public static final int notification_media_narrow_margin=0x7f090003;
+        public static final int notification_right_icon_size=0x7f090010;
+        public static final int notification_right_side_padding_top=0x7f090000;
+        public static final int notification_small_icon_background_padding=0x7f090011;
+        public static final int notification_small_icon_size_as_large=0x7f090012;
+        public static final int notification_subtext_size=0x7f090013;
+        public static final int notification_top_pad=0x7f090014;
+        public static final int notification_top_pad_large_text=0x7f090015;
     }
     public static final class drawable {
         public static final int common_full_open_on_phone=0x7f020000;
@@ -468,88 +436,79 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f02001f;
         public static final int notification_bg_normal_pressed=0x7f020020;
         public static final int notification_icon_background=0x7f020021;
-        public static final int notification_template_icon_bg=0x7f020026;
-        public static final int notification_template_icon_low_bg=0x7f020027;
+        public static final int notification_template_icon_bg=0x7f020024;
+        public static final int notification_template_icon_low_bg=0x7f020025;
         public static final int notification_tile_bg=0x7f020022;
         public static final int notify_panel_notification_icon_bg=0x7f020023;
-        public static final int tappx_privacy_banner_icon_plain=0x7f020024;
-        public static final int tappx_privacy_button_background=0x7f020025;
     }
     public static final class id {
-        public static final int action_container=0x7f09002f;
-        public static final int action_divider=0x7f09003b;
-        public static final int action_image=0x7f090030;
-        public static final int action_text=0x7f090031;
-        public static final int actions=0x7f09003c;
-        public static final int adjust_height=0x7f090008;
-        public static final int adjust_width=0x7f090009;
-        public static final int all=0x7f09001f;
-        public static final int async=0x7f090020;
-        public static final int auto=0x7f09000e;
-        public static final int blocking=0x7f090021;
-        public static final int bottom=0x7f090011;
-        public static final int browser_actions_header_text=0x7f090026;
-        public static final int browser_actions_menu_item_icon=0x7f090028;
-        public static final int browser_actions_menu_item_text=0x7f090029;
-        public static final int browser_actions_menu_items=0x7f090027;
-        public static final int browser_actions_menu_view=0x7f090025;
-        public static final int center=0x7f090012;
-        public static final int center_horizontal=0x7f090013;
-        public static final int center_vertical=0x7f090014;
-        public static final int chronometer=0x7f09003a;
-        public static final int clip_horizontal=0x7f090015;
-        public static final int clip_vertical=0x7f090016;
-        public static final int dark=0x7f09000f;
-        public static final int end=0x7f090017;
-        public static final int ex=0x7f09002e;
-        public static final int expandedListItem=0x7f09002b;
-        public static final int fill=0x7f090018;
-        public static final int fill_horizontal=0x7f090019;
-        public static final int fill_vertical=0x7f09001a;
-        public static final int forever=0x7f090022;
-        public static final int icon=0x7f090033;
-        public static final int icon_group=0x7f09003d;
-        public static final int icon_only=0x7f09000b;
-        public static final int info=0x7f090036;
-        public static final int italic=0x7f090023;
-        public static final int layout=0x7f09002c;
-        public static final int left=0x7f09001b;
-        public static final int light=0x7f090010;
-        public static final int line1=0x7f090000;
-        public static final int line3=0x7f090001;
-        public static final int listTitle=0x7f09002a;
-        public static final int none=0x7f09000a;
-        public static final int normal=0x7f090024;
-        public static final int notification_background=0x7f090038;
-        public static final int notification_main_column=0x7f090034;
-        public static final int notification_main_column_container=0x7f090032;
-        public static final int right=0x7f09001c;
-        public static final int right_icon=0x7f090037;
-        public static final int right_side=0x7f090035;
-        public static final int standard=0x7f09000c;
-        public static final int start=0x7f09001d;
-        public static final int tag_transition_group=0x7f090002;
-        public static final int tag_unhandled_key_event_manager=0x7f090003;
-        public static final int tag_unhandled_key_listeners=0x7f090004;
-        public static final int tappx_banner=0x7f09002d;
-        public static final int tappx_privacy_button_no=0x7f090041;
-        public static final int tappx_privacy_button_yes=0x7f090040;
-        public static final int tappx_privacy_container_content=0x7f09003e;
-        public static final int tappx_privacy_container_expand_image=0x7f090043;
-        public static final int tappx_privacy_container_expand_switch=0x7f090042;
-        public static final int tappx_privacy_text_message=0x7f09003f;
-        public static final int text=0x7f090005;
-        public static final int text2=0x7f090006;
-        public static final int time=0x7f090039;
-        public static final int title=0x7f090007;
-        public static final int top=0x7f09001e;
-        public static final int web=0x7f090044;
-        public static final int wide=0x7f09000d;
+        public static final int action_container=0x7f0a002e;
+        public static final int action_divider=0x7f0a003a;
+        public static final int action_image=0x7f0a002f;
+        public static final int action_text=0x7f0a0030;
+        public static final int actions=0x7f0a003b;
+        public static final int adjust_height=0x7f0a0008;
+        public static final int adjust_width=0x7f0a0009;
+        public static final int all=0x7f0a001f;
+        public static final int async=0x7f0a0020;
+        public static final int auto=0x7f0a000e;
+        public static final int blocking=0x7f0a0021;
+        public static final int bottom=0x7f0a0011;
+        public static final int browser_actions_header_text=0x7f0a0026;
+        public static final int browser_actions_menu_item_icon=0x7f0a0029;
+        public static final int browser_actions_menu_item_text=0x7f0a0028;
+        public static final int browser_actions_menu_items=0x7f0a0027;
+        public static final int browser_actions_menu_view=0x7f0a0025;
+        public static final int center=0x7f0a0012;
+        public static final int center_horizontal=0x7f0a0013;
+        public static final int center_vertical=0x7f0a0014;
+        public static final int chronometer=0x7f0a0039;
+        public static final int clip_horizontal=0x7f0a0015;
+        public static final int clip_vertical=0x7f0a0016;
+        public static final int dark=0x7f0a000f;
+        public static final int end=0x7f0a0017;
+        public static final int ex=0x7f0a002d;
+        public static final int expandedListItem=0x7f0a002b;
+        public static final int fill=0x7f0a0018;
+        public static final int fill_horizontal=0x7f0a0019;
+        public static final int fill_vertical=0x7f0a001a;
+        public static final int forever=0x7f0a0022;
+        public static final int icon=0x7f0a0032;
+        public static final int icon_group=0x7f0a003c;
+        public static final int icon_only=0x7f0a000b;
+        public static final int info=0x7f0a0035;
+        public static final int italic=0x7f0a0023;
+        public static final int layout=0x7f0a002c;
+        public static final int left=0x7f0a001b;
+        public static final int light=0x7f0a0010;
+        public static final int line1=0x7f0a0000;
+        public static final int line3=0x7f0a0001;
+        public static final int listTitle=0x7f0a002a;
+        public static final int none=0x7f0a000a;
+        public static final int normal=0x7f0a0024;
+        public static final int notification_background=0x7f0a0037;
+        public static final int notification_main_column=0x7f0a0033;
+        public static final int notification_main_column_container=0x7f0a0031;
+        public static final int right=0x7f0a001c;
+        public static final int right_icon=0x7f0a0036;
+        public static final int right_side=0x7f0a0034;
+        public static final int standard=0x7f0a000c;
+        public static final int start=0x7f0a001d;
+        public static final int tag_transition_group=0x7f0a0002;
+        public static final int tag_unhandled_key_event_manager=0x7f0a0003;
+        public static final int tag_unhandled_key_listeners=0x7f0a0004;
+        public static final int text=0x7f0a0005;
+        public static final int text2=0x7f0a0006;
+        public static final int time=0x7f0a0038;
+        public static final int title=0x7f0a0007;
+        public static final int top=0x7f0a001e;
+        public static final int web=0x7f0a003d;
+        public static final int wide=0x7f0a000d;
     }
     public static final class integer {
-        public static final int com_startapp_sdk_aar=0x7f070002;
-        public static final int google_play_services_version=0x7f070000;
-        public static final int status_bar_notification_info_maxnum=0x7f070001;
+        public static final int com_startapp_sdk_aar=0x7f080002;
+        public static final int google_play_services_version=0x7f080000;
+        public static final int status_bar_notification_info_maxnum=0x7f080001;
     }
     public static final class layout {
         public static final int browser_actions_context_menu_page=0x7f030000;
@@ -564,44 +523,49 @@ containing a value of this type.
         public static final int notification_template_icon_group=0x7f030009;
         public static final int notification_template_part_chronometer=0x7f03000a;
         public static final int notification_template_part_time=0x7f03000b;
-        public static final int tappx_privacy_message=0x7f03000c;
-        public static final int web_activity=0x7f03000d;
+        public static final int web_activity=0x7f03000c;
     }
     public static final class string {
-        public static final int app_name=0x7f050013;
-        public static final int common_google_play_services_enable_button=0x7f050000;
-        public static final int common_google_play_services_enable_text=0x7f050001;
-        public static final int common_google_play_services_enable_title=0x7f050002;
-        public static final int common_google_play_services_install_button=0x7f050003;
-        public static final int common_google_play_services_install_text=0x7f050004;
-        public static final int common_google_play_services_install_title=0x7f050005;
-        public static final int common_google_play_services_notification_channel_name=0x7f050006;
-        public static final int common_google_play_services_notification_ticker=0x7f050007;
-        public static final int common_google_play_services_unknown_issue=0x7f050011;
-        public static final int common_google_play_services_unsupported_text=0x7f050008;
-        public static final int common_google_play_services_update_button=0x7f050009;
-        public static final int common_google_play_services_update_text=0x7f05000a;
-        public static final int common_google_play_services_update_title=0x7f05000b;
-        public static final int common_google_play_services_updating_text=0x7f05000c;
-        public static final int common_google_play_services_wear_update_text=0x7f05000d;
-        public static final int common_open_on_phone=0x7f05000e;
-        public static final int common_signin_button_text=0x7f05000f;
-        public static final int common_signin_button_text_long=0x7f050010;
-        public static final int hello_world=0x7f050014;
-        public static final int status_bar_notification_info_overflow=0x7f050012;
+        public static final int app_name=0x7f060017;
+        public static final int common_google_play_services_enable_button=0x7f060000;
+        public static final int common_google_play_services_enable_text=0x7f060001;
+        public static final int common_google_play_services_enable_title=0x7f060002;
+        public static final int common_google_play_services_install_button=0x7f060003;
+        public static final int common_google_play_services_install_text=0x7f060004;
+        public static final int common_google_play_services_install_title=0x7f060005;
+        public static final int common_google_play_services_notification_channel_name=0x7f060006;
+        public static final int common_google_play_services_notification_ticker=0x7f060007;
+        public static final int common_google_play_services_unknown_issue=0x7f060011;
+        public static final int common_google_play_services_unsupported_text=0x7f060008;
+        public static final int common_google_play_services_update_button=0x7f060009;
+        public static final int common_google_play_services_update_text=0x7f06000a;
+        public static final int common_google_play_services_update_title=0x7f06000b;
+        public static final int common_google_play_services_updating_text=0x7f06000c;
+        public static final int common_google_play_services_wear_update_text=0x7f06000d;
+        public static final int common_open_on_phone=0x7f06000e;
+        public static final int common_signin_button_text=0x7f06000f;
+        public static final int common_signin_button_text_long=0x7f060010;
+        public static final int copy_toast_msg=0x7f060013;
+        public static final int fallback_menu_item_copy_link=0x7f060014;
+        public static final int fallback_menu_item_open_in_browser=0x7f060015;
+        public static final int fallback_menu_item_share_link=0x7f060016;
+        public static final int hello_world=0x7f060018;
+        public static final int status_bar_notification_info_overflow=0x7f060012;
     }
     public static final class style {
-        public static final int AppTheme=0x7f06000a;
-        public static final int TextAppearance_Compat_Notification=0x7f060002;
-        public static final int TextAppearance_Compat_Notification_Info=0x7f060003;
-        public static final int TextAppearance_Compat_Notification_Line2=0x7f060008;
-        public static final int TextAppearance_Compat_Notification_Time=0x7f060004;
-        public static final int TextAppearance_Compat_Notification_Title=0x7f060005;
-        public static final int Theme_IAPTheme=0x7f060000;
-        public static final int Transparent=0x7f060009;
-        public static final int Widget_Compat_NotificationActionContainer=0x7f060006;
-        public static final int Widget_Compat_NotificationActionText=0x7f060007;
-        public static final int Widget_Support_CoordinatorLayout=0x7f060001;
+        public static final int AppTheme=0x7f070009;
+        public static final int TextAppearance_Compat_Notification=0x7f070002;
+        public static final int TextAppearance_Compat_Notification_Info=0x7f070003;
+        public static final int TextAppearance_Compat_Notification_Line2=0x7f070008;
+        public static final int TextAppearance_Compat_Notification_Time=0x7f070004;
+        public static final int TextAppearance_Compat_Notification_Title=0x7f070005;
+        public static final int Theme_IAPTheme=0x7f070000;
+        public static final int Widget_Compat_NotificationActionContainer=0x7f070006;
+        public static final int Widget_Compat_NotificationActionText=0x7f070007;
+        public static final int Widget_Support_CoordinatorLayout=0x7f070001;
+    }
+    public static final class xml {
+        public static final int image_share_filepaths=0x7f040000;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -1551,80 +1515,5 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.chucho.biblioastro:scopeUris
         */
         public static final int SignInButton_scopeUris = 2;
-        /** Attributes that can be used with a TappxParams.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TappxParams_txAdSize com.chucho.biblioastro:txAdSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #TappxParams_txAppKey com.chucho.biblioastro:txAppKey}</code></td><td></td></tr>
-           <tr><td><code>{@link #TappxParams_txAutoPrivacyDisclaimer com.chucho.biblioastro:txAutoPrivacyDisclaimer}</code></td><td></td></tr>
-           <tr><td><code>{@link #TappxParams_txRefreshTime com.chucho.biblioastro:txRefreshTime}</code></td><td></td></tr>
-           </table>
-           @see #TappxParams_txAdSize
-           @see #TappxParams_txAppKey
-           @see #TappxParams_txAutoPrivacyDisclaimer
-           @see #TappxParams_txRefreshTime
-         */
-        public static final int[] TappxParams = {
-            0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021
-        };
-        /**
-          <p>This symbol is the offset where the {@link com.chucho.biblioastro.R.attr#txAdSize}
-          attribute's value can be found in the {@link #TappxParams} array.
-
-
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.chucho.biblioastro:txAdSize
-        */
-        public static final int TappxParams_txAdSize = 0;
-        /**
-          <p>This symbol is the offset where the {@link com.chucho.biblioastro.R.attr#txAppKey}
-          attribute's value can be found in the {@link #TappxParams} array.
-
-
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.chucho.biblioastro:txAppKey
-        */
-        public static final int TappxParams_txAppKey = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.chucho.biblioastro.R.attr#txAutoPrivacyDisclaimer}
-          attribute's value can be found in the {@link #TappxParams} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.chucho.biblioastro:txAutoPrivacyDisclaimer
-        */
-        public static final int TappxParams_txAutoPrivacyDisclaimer = 2;
-        /**
-          <p>This symbol is the offset where the {@link com.chucho.biblioastro.R.attr#txRefreshTime}
-          attribute's value can be found in the {@link #TappxParams} array.
-
-
-          <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.chucho.biblioastro:txRefreshTime
-        */
-        public static final int TappxParams_txRefreshTime = 3;
     };
 }

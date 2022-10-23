@@ -12,21 +12,21 @@
 	android:id="@+id/layout"
 	android:background="@drawable/image_2">
 	
-	<com.tappx.sdk.android.TappxBanner
+	<!--<com.tappx.sdk.android.TappxBanner
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/tappx_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:txAppKey="pub-71023-android-7459"
-        app:txAdSize="SMART_BANNER"
-	/>
+        app:txAdSize="SMART_BANN"
+	/>-->
 
 	<ExpandableListView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:divider="@android:color/darker_gray"
 		android:dividerHeight="0.5dp"
-		android:layout_below="@id/tappx_banner"
+		
 		android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
 		android:paddingTop="3dp"
 		android:id="@+id/ex"/>

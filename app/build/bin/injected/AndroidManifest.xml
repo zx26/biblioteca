@@ -2,8 +2,8 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.chucho.biblioastro"
-	android:versionCode="4"
-	android:versionName="1.0.3">
+	android:versionCode="5"
+	android:versionName="1.0.4">
 
 	<uses-sdk
 		android:minSdkVersion="21"
@@ -108,21 +108,6 @@
 					android:name="android.intent.action.BOOT_COMPLETED"/>
 
 			</intent-filter>
-
-		</receiver>
-
-		<activity
-			android:name="com.google.android.gms.ads.AdActivity"
-			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-			android:theme="@android:style/Theme.Translucent"/>
-
-		<meta-data
-			android:name="com.google.android.gms.version"
-			android:value="@integer/google_play_services_version"/>
-
-		<receiver
-			android:name="com.tappx.sdk.android.TrackInstallReceiver"
-			android:exported="true">
 
 		</receiver>
 
