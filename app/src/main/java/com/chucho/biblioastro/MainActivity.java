@@ -44,7 +44,6 @@ public class MainActivity extends Activity
 		ex.setAdapter(expandableListAdapter);
 		
 		
-		
 		ex.setOnChildClickListener(new ExpandableListView.OnChildClickListener(){
 	     public boolean onChildClick(ExpandableListView parent,View v,
 			             int groupPosition,int childPosition, long id){
