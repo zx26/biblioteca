@@ -8,7 +8,7 @@ import android.view.*;
 import android.content.*;
 import com.startapp.sdk.adsbase.*;
 import com.startapp.sdk.ads.banner.*;
-import com.tappx.sdk.android.*;
+//import com.tappx.sdk.android.*;
 
 public class MainActivity extends Activity 
 {
@@ -30,11 +30,8 @@ public class MainActivity extends Activity
 		StartAppAd.disableSplash();
 		StartAppAd.setAutoInterstitialPreferences(
 		                   new AutoInterstitialPreferences().setActivitiesBetweenAds(4));
-		
-						   
-						   
-		StartAppAd.showAd(this);
-		
+							   
+		StartAppAd.showAd(this);	
 		//Tappx.setCollectLocationEnabled(getBaseContext(),true);
 		//banner = (TappxBanner)findViewById(R.id.tappx_banner);
 		ex = (ExpandableListView)findViewById(R.id.ex);
