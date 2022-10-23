@@ -43,11 +43,7 @@ public class MainActivity extends Activity
 		expandableListAdapter=new ExpandableListAdapter(this,expandableTitleList,expandableDetailList);
 		ex.setAdapter(expandableListAdapter);
 		
-		ex.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener(){
-			public void onGroupExpand(int groupPosition){
-				Toast.makeText(getApplicationContext(),expandableTitleList.get(groupPosition),Toast.LENGTH_SHORT).show();
-			}
-		});
+		
 		
 		ex.setOnChildClickListener(new ExpandableListView.OnChildClickListener(){
 	     public boolean onChildClick(ExpandableListView parent,View v,
