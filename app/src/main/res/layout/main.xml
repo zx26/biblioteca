@@ -18,7 +18,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		app:txAppKey="pub-71023-android-7459"
-		app:txAdSize="SMART_BANNER"/>
+		app:txAdSize="Smart"/>
 
 	<ExpandableListView
 		android:layout_width="match_parent"
