@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.startapp.startappsdk;
+package androidx.customview;
 
 public final class R {
     public static final class attr {

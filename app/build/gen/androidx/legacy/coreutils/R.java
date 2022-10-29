@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.startapp.startappsdk;
+package androidx.legacy.coreutils;
 
 public final class R {
     public static final class attr {

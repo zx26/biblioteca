@@ -8,7 +8,7 @@ import android.view.*;
 import android.content.*;
 import com.startapp.sdk.adsbase.*;
 import com.startapp.sdk.ads.banner.*;
-//import com.tappx.sdk.android.*;
+import com.tappx.sdk.android.*;
 
 public class MainActivity extends Activity 
 {
@@ -17,7 +17,7 @@ public class MainActivity extends Activity
 	List<String> expandableTitleList;
 	HashMap<String,List<String>> expandableDetailList;
 	WebActivity web;
-	//TappxBanner banner;
+	TappxBanner banner;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,8 +32,8 @@ public class MainActivity extends Activity
 		                   new AutoInterstitialPreferences().setActivitiesBetweenAds(4));
 							   
 		StartAppAd.showAd(this);	
-		//Tappx.setCollectLocationEnabled(getBaseContext(),true);
-		//banner = (TappxBanner)findViewById(R.id.tappx_banner);
+		Tappx.setCollectLocationEnabled(getBaseContext(),true);
+		
 		ex = (ExpandableListView)findViewById(R.id.ex);
 		expandableDetailList=ItemDataList.getData();
 		expandableTitleList=new ArrayList<String>(expandableDetailList.keySet());

@@ -25,6 +25,9 @@
 		android:usesCleartextTraffic="true"
 		android:resizeableActivity = "true">
 		<meta-data android:name="com.startapp.sdk.APPLICATION_ID" android:value="208698859" />
+	    <meta-data
+			android:name="com.google.android.gms.ads.APPLICATION_ID"
+			android:value="ca-app-pub-4821657528115843~7196911939"/>
 		<activity android:name=".WebActivity"/>
         <activity
             android:name=".MainActivity"
@@ -53,7 +56,7 @@
 			</receiver>
 	    
 		<!-- AdActivity from Google Play Services, needed by Tappx -->
-		<!--<activity
+		<activity
 			android:name="com.google.android.gms.ads.AdActivity"
 			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
 			android:theme="@android:style/Theme.Translucent" />
@@ -63,7 +66,7 @@
 		<receiver
             android:name="com.tappx.sdk.android.TrackInstallReceiver"
             android:exported="true">
-        </receiver>-->
+        </receiver>
     </application>
 	
 	
